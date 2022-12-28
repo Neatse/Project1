@@ -31,65 +31,42 @@
         <div class="row">
           <div class="col s12">
             <header>
-              <h1>WeatherNews</h1>
+              <h1>Spaceinfo</h1>
             </header>
           </div>
         </div>
-        <div class="row">
-          <div id="top-block" class="col s12" style="border: 1px solid black">
-            Block 1
+        <div id="top-block" class="row blockstyles">
+          <div class="col s4">
+            <img class="spacepic" />
+          </div>
+          <div class="col s8">
+            <h5></h5>
+            <p></p>
+            <button id="previous">Previous</button>
           </div>
         </div>
         <div class="row">
-          <div id="side-block" class="col s4" style="border: 1px solid black">
-            Block 2
-
-            <button id="refresh-btn">Refresh</button>
+          <div id="side-block" class="col s4 blockstyles">
+            <h6>Planets</h6>
+            <ul>
+              <li><a id="mercury">Mercury</a></li>
+              <li><a id="venus">Venus</a></li>
+              <li><a id="earth">Earth</a></li>
+              <li><a id="mars">Mars</a></li>
+              <li><a id="jupiter">Jupiter</a></li>
+              <li><a id="saturn">Saturn</a></li>
+              <li><a id="uranus">Uranus</a></li>
+              <li><a id="neptune">Neptune</a></li>
+            </ul>
+            <!-- <h6>Others?</h6>
+            <ul>
+              <li><a id="black-hole">Black Hole</a></li>
+              <li><a id="sun">Sun</a></li>
+            </ul> -->
           </div>
-          <div id="main-block" class="col s8" style="border: 1px solid black">
-            Block 3
-          </div>
+          <div id="main-block" class="col s8 blockstyles"></div>
         </div>
       </div>
     </main>
-    <script defer>
-      var topBlock = document.querySelector("#top-block");
-      var sideBlock = document.querySelector("#side-block");
-      var mainBlock = document.querySelector("#main-block");
-
-      var refreshButton = document.querySelector("#refresh-btn");
-
-      // Gets the data from the API, then passes it to the "onDone" function
-      function fetchMyData() {
-        var myData = /* Call API */ "I got this data from my API";
-
-        /*
-        // Promise style
-        fetch('http://example.com/movies.json')
-          .then((response) => response.json()) // Or response.text()
-          .then((data) => handleMyData(data));
-
-        // The same, but using "async / await"
-        const response = await fetch('url');
-        const data = await response.json();
-        handleMyData(data);
-        */
-
-        // Call the function passed to "fetchMyData"
-        handleMyData(myData);
-      }
-
-      // Handles data from the API
-      function handleMyData(data) {
-        topBlock.innerHTML = data;
-      }
-
-      // Calls the API with the handler for the first time
-      fetchMyData();
-
-      refreshButton.addEventListener("click", () => {
-        handleMyData("I refreshed my data!");
-      });
-    </script>
   </body>
 </html>
