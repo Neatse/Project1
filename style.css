@@ -1,4 +1,9 @@
 
+body {background-color: #0a0a0a;}
+
+li { cursor: pointer; }
+
+
 #top-block {
     border: 1px solid black;
 }
@@ -10,4 +15,22 @@
 .spacepic {
     width: 100%;
     margin-top: 10px;
+}
+
+.row {
+    padding: 1px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: left;
+    background: #965a01;
+    color: white;
+   
+    
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 10px;
 }
