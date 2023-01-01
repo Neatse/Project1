@@ -68,7 +68,6 @@ function handleNASAImageData(data, objectName) {
         // var currentItem = items[i];
 
         // Get the random Item:
-        // BUG: the same index can show up twice, find a way to prevent that.
         var randomIndex = Math.floor(Math.random() * length); // 0 -> length;
         var currentItem = items[randomIndex];
 
@@ -139,8 +138,3 @@ neptuneName.addEventListener('click', () => {
 });
 
 
-// Add click handler for back button
-backButton.addEventListener('click', () => {
-    fetchDPData();
-    console.log('Clicked Previous');
-});
