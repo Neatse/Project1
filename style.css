@@ -12,22 +12,31 @@
     margin-top: 10px;
 }
 
-body {background-color: #0a0a0a;}
+body {
+    background-color: rgb(238, 232, 232);
+
+}
 
 h1 {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-family: 'Nasa', sans-serif;
+    
 }
 
-li { cursor: pointer; }
-
+li {
+    cursor: pointer;
+}
 
 #top-block {
-    border: 1px solid black;
+   border: 2px solid red;
 }
 
+
+
 .blockstyles {
-    border: 1px solid black;
+    border: 2px solid red;;
 }
 
 .spacepic {
@@ -37,13 +46,12 @@ li { cursor: pointer; }
 
 .row {
     padding: 1px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 1px;
     text-align: left;
-    background: #965a01;
-    color: white;
-   
-    
+    background: lightblue;
+    color: rgb(12, 12, 12);
+
 }
 .row .col {
     float: left;
