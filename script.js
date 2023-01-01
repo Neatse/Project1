@@ -63,7 +63,7 @@ function handleNASAImageData(data, objectName) {
     // Clear the previous elements
     mainBlock.innerHTML = `<h3>${objectName}</h3>`;
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 1; i++) {
         // Get the next Item:
         // var currentItem = items[i];
 
@@ -136,5 +136,6 @@ neptuneName.addEventListener('click', () => {
     fetchNASAData('Neptune');
     console.log('clicked Neptune');
 });
+
 
 

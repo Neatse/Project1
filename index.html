@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://fonts.cdnfonts.com/css/nasa" rel="stylesheet">
-    <link href="C:\Users\Kev_Luck\bootcamp\Project1\favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.cdnfonts.com/css/nasa" rel="stylesheet" />
+    <link
+      href="C:\Users\Kev_Luck\bootcamp\Project1\favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,11 +34,13 @@
   <body>
     <main>
       <div class="container">
+        <video id="background-video" autoplay loop muted poster="bg.png">
+          <source src="galaxyfile.mp4" type="video/mp4" />
+        </video>
         <div class="row">
           <div class="col s12">
             <header>
               <h1>Spaceinfo 🪐</h1>
-             
             </header>
           </div>
         </div>
@@ -61,14 +67,15 @@
               <li><a id="neptune">Neptune</a></li>
             </ul>
             <!-- <h6>Others?</h6>
-            <ul>
-              <li><a id="black-hole">Black Hole</a></li>
-              <li><a id="sun">Sun</a></li>
-            </ul> -->
+              <ul>
+                <li><a id="black-hole">Black Hole</a></li>
+                <li><a id="sun">Sun</a></li>
+              </ul> -->
           </div>
           <div id="main-block" class="col s8 blockstyles"></div>
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
