@@ -1,8 +1,5 @@
 # Project1: Interactive Front-End Project
 
-# Repository link
-https://github.com/KevLuck/WeatherDashboard.git
-
 # Website link
 https://neatse.github.io/Project1/
 
