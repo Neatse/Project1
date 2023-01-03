@@ -1,4 +1,4 @@
-# Project1: Interactive Front-End Project
+# Project 1: Interactive Front-End Project
 
 # Website link
 https://neatse.github.io/Project1/
